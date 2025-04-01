@@ -13,6 +13,7 @@ import {
 } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import PersonIcon from '@mui/icons-material/Person';
 
 const drawerWidth = 240;
 
@@ -27,7 +28,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ open, onClose }) => {
 
   const menuItems = [
     { text: 'Home', icon: <HomeIcon />, path: '/' },
-    { text: 'Editoras', icon: <MenuBookIcon />, path: '/publishers' },
+    { text: 'Editoras (Publishers)', icon: <MenuBookIcon />, path: '/publishers' },
+    { text: 'Personagens (Characters)', icon:<PersonIcon />, path: '/characters' },
   ];
 
   return (
