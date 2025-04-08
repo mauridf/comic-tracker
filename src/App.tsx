@@ -6,6 +6,8 @@ import { PublisherList } from './pages/publishers/PublisherList';
 import { PublisherForm } from './pages/publishers/PublisherForm';
 import { CharacterList } from './pages/characters/CharacterList';
 import { CharacterForm } from './pages/characters/CharacterForm';
+import { TeamList } from './pages/teams/TeamList';
+import { TeamForm } from './pages/teams/TeamForm';
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -39,12 +41,18 @@ const App: React.FC = () => {
           )}
           <Routes>
             <Route path="/" element={<Home />} />
+
             <Route path="/publishers" element={<PublisherList />} />
             <Route path="/publishers/new" element={<PublisherForm />} />
             <Route path="/publishers/edit/:id" element={<PublisherForm />} />
+
             <Route path="/characters" element={<CharacterList />} />
             <Route path="/characters/new" element={<CharacterForm />} />
             <Route path="/characters/edit/:id" element={<CharacterForm />} />
+
+            <Route path="/teams" element={<TeamList />} />
+            <Route path="/teams/new" element={<TeamForm />} />
+            <Route path="/teams/edit/:id" element={<TeamForm />} />
           </Routes>
         </Box>
       </Box>
